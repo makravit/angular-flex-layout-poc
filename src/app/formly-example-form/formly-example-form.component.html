@@ -1,0 +1,9 @@
+<div fxLayout="row">
+  <form [formGroup]="form" (ngSubmit)="submit()" fxFlex="50" fxFlex.lt-md="100">
+    <formly-form [model]="model" [fields]="fields" [options]="options" [form]="form"></formly-form>
+    <div class="buttons">
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+      <button type="button" mat-button>Reset</button>
+    </div>
+  </form>
+</div>

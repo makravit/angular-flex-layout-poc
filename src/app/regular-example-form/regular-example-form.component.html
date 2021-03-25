@@ -1,0 +1,25 @@
+<div fxLayout="row">
+  <form [formGroup]="form" (ngSubmit)="submit()" fxFlex="50" fxFlex.lt-md="100">
+    <mat-form-field appearance="standard">
+      <mat-label>First Name</mat-label>
+      <input matInput placeholder="Please enter your first name">
+    </mat-form-field>
+
+    <mat-form-field appearance="standard">
+      <mat-label>Last Name</mat-label>
+      <input matInput placeholder="Please enter your last name">
+    </mat-form-field>
+
+    <mat-checkbox>Is formly awesome?</mat-checkbox>
+
+    <mat-form-field appearance="standard">
+      <mat-label>Why not?</mat-label>
+      <textarea matInput placeholder="Please enter your reasons"></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+      <button type="submit" mat-raised-button color="primary">Submit</button>
+      <button type="button" mat-button>Reset</button>
+    </div>
+  </form>
+</div>
